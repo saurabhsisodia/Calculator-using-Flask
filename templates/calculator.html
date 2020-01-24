@@ -1,0 +1,22 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>calculator</title>
+</head>
+<body>
+	<div>
+		<h2>Make Your Calculation Faster</h2>
+		<form action="{{url_for('ans')}}" method="POST">
+			<fieldset>
+				<input type="text" name="total"><br>
+				<input type="submit" value="ans">
+			</fieldset>
+		</form>
+		<div>
+			{% block result %}
+
+			{% endblock %}
+		</div>
+	</div>
+</body>
+</html>

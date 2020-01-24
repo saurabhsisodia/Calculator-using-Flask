@@ -1,0 +1,9 @@
+{% extends "calculator.html" %}
+{% if total %}
+	{% block result %}
+	<span style="color:blue">
+		{{total}}
+	</span>
+	{{valid}}
+	{% endblock %}
+{% endif %}
